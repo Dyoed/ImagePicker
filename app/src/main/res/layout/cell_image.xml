@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<imagepicker.jose.com.imagepicker.SquareFrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1.5dp"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        app:riv_corner_radius="10dp"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <FrameLayout
+        android:id="@+id/checked_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_alpha_50"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_grid_selected"/>
+
+    </FrameLayout>
+
+</imagepicker.jose.com.imagepicker.SquareFrameLayout>
